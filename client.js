@@ -13,7 +13,8 @@ const connect = function () {
 
   conn.on('connect', ()=> console.log("You have been connected to the Game server now !"))
 
-  conn.on('connect', ()=> conn.write("Name:GUR"))
+  conn.on('connect', ()=> conn.write("Name: GUR"))
+  
   return conn;
 };
 
